@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <h1>Calculadora de Nota Final</h1>
+    <h1>CALCULATOR FASE 2</h1>
 
     <form id="gradeForm">
         <label for="eval1">Evaluación 1 (30%):</label>
@@ -22,10 +22,11 @@
 
         <label for="finalProject">Proyecto Final (30%):</label>
         <input type="number" id="finalProject" step="1" min="1" max="100" oninput="validarValor(this)" required><br>
-
-        <button type="button" onclick="calcularNotaFinal()">Calcular Nota Final</button>
+        
     </form>
-
+    
+<button type="button" onclick="calcularNotaFinal()">Calcular Nota Final</button>
+    
     <h2>Nota Final:</h2>
     <p id="notaFinal"></p>
 
