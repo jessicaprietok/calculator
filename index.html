@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Nota Final</title>
+</head>
+<body>
+
+    <h1>Calculadora de Nota Final</h1>
+
+    <form id="gradeForm">
+        <label for="eval1">Evaluación 1 (30%):</label>
+        <input type="number" id="eval1" step="1" min="1" max="100" oninput="validarValor(this)" required><br>
+
+        <label for="eval2">Evaluación 2 (20%):</label>
+        <input type="number" id="eval2" step="1" min="1" max="100" oninput="validarValor(this)" required><br>
+
+        <label for="eval3">Evaluación 3 (20%):</label>
+        <input type="number" id="eval3" step="1" min="1" max="100" oninput="validarValor(this)" required><br>
+
+        <label for="finalProject">Proyecto Final (30%):</label>
+        <input type="number" id="finalProject" step="1" min="1" max="100" oninput="validarValor(this)" required><br>
+
+        <button type="button" onclick="calcularNotaFinal()">Calcular Nota Final</button>
+    </form>
+
+    <h2>Nota Final:</h2>
+    <p id="notaFinal"></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
